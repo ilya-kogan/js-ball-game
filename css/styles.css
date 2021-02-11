@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  width: 32px;
+  height: 68px;  
+  background: url('../img/preloader-sprite.png') 0 0 no-repeat;
+  transform: translate(-50%, -50%);
+  animation: rotate-clockwise 6s steps(21) infinite;
+}
+
+@keyframes rotate-clockwise {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -672px 0; } 
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  padding-bottom: 31px;
+  display: block;
+  border: 5px solid #c6c6c6;
+  background-image: url('../img/bg.jpg');
+  background-size: contain;
+  transform: translate(-50%, -50%); 
+}
